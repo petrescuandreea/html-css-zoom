@@ -5,52 +5,119 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
+/* top  */
+#top {
+  height: 60px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  float: right;
+  margin: 15px 20px;
+}
+
+#speaker_view , #full_screen {
+  float: left;
+  background-color: rgba(54,54,54,255);
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#speaker_view {
+  margin-right: 5px;
+}
+
+#top #speaker_view .fas {
+  margin-right: 8px;
+}
+
+#top a {
+  text-decoration: none;
+  color: white;
+} 
+
+
 /* main part  */
 main {
-    height: calc(100vh - 80px);
-    background-color: rgba(0,0,0,255);
+    height: calc(100vh - 140px);
+    background-color:thistle;
 }
 
-main .container {
-    
+.main_content {
     background-color: cadetblue;
     display: flex;
-    align-items: stretch;
-    padding: 100px 0;
-    text-align: center;
     align-items: center;
+    height: 100%;
+    /* padding: 100px 0; */ 
+} 
+
+.main_content .side {
+    background-color:chocolate;
+    padding: 0 20px;
 }
 
-.container .side {
-    background-color:chocolate;
-    padding: 0 40px;
+.main_content .side .fas {
+    font-size: 85px;
 }
+
+.main_content .side .fas.grey {
+    color: rgba(127,127,127,255);
+}
+
+.main_content .side .fas.blue {
+    color: rgba(46,186,255,255);
+}
+
 
 #participants {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .person {
     width: 250px;
     height: 150px;
+    margin-left: 5px;
+    background-color: blueviolet;
+    border:1px solid black;
+    position: relative;
 }
 
-.person img {
+.person .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(62,69,73,255);
+    padding: 4px;
+}
+
+/* .person img {
     width: 100%;
     object-fit: cover;
-}
+}   */
+
 
 /* footer  */
 footer {
     height: 80px;
-    background-color: rgba(33,35,36,255);
 }
 
 .flex_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100%;
+    background-color: rgba(32,34,35,255);
 }
 
 #nav_left {

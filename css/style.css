@@ -11,9 +11,34 @@ main {
     background-color: rgba(0,0,0,255);
 }
 
+main .container {
+    
+    background-color: cadetblue;
+    display: flex;
+    align-items: stretch;
+    padding: 100px 0;
+    text-align: center;
+    align-items: center;
+}
 
+.container .side {
+    background-color:chocolate;
+    padding: 0 40px;
+}
 
+#participants {
+    display: flex;
+}
 
+.person {
+    width: 250px;
+    height: 150px;
+}
+
+.person img {
+    width: 100%;
+    object-fit: cover;
+}
 
 /* footer  */
 footer {

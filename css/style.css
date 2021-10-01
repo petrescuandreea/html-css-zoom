@@ -11,18 +11,20 @@ body {
 
 /* top  */
 #top {
-  height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .container {
-  float: right;
-  margin: 15px 20px;
+    float: right;
+    margin: 15px 20px;
 }
 
 #speaker_view , #full_screen {

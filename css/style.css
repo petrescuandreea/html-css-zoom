@@ -58,6 +58,10 @@ main {
     height: 100%;
 } 
 
+.main_content .btn , footer .btn {
+    text-decoration: none;
+}
+
 .main_content .side {
     padding: 0 20px;
     color: white;
@@ -140,9 +144,6 @@ footer {
     color: rgba(168,78,74,255);
 }
 
-footer a {
-    text-decoration: none;
-}
 .icon {
     margin: 0 10px;
     display: flex;
